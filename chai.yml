@@ -49,3 +49,72 @@ morning_brew : 2025-1-15
 local_time : 2025-1-15 08:30:01
 
 # Collections in YAML
+spices:
+  - ginger
+  - cloves
+  - back_pepper
+  - true
+  - 200
+
+spices_two: [cardamon, ginger, cloves]
+steeping_time: [3,2,1]
+
+# Nested List
+chai_categories:
+  - name: Traditional
+    varities: 
+      - Masla Chai
+      - Ginger Chai
+      - Cardmon Chai
+  - name : Modern
+    varities:
+      - Vanilla Chai
+      - Chocolate Chai
+
+
+masla_chai:
+  ingredients:
+    tea: black tea
+    liquid:
+      water : 200 ml 
+      milk: 100 ml
+    spices:
+      ginger : 1 inch
+      cinnamon: 1_stick
+  preperation:
+    method: simmer
+    duration: 5_minutes
+
+chai_menu:
+  - name: Masala Chai
+    price : 30
+    size : regular
+
+  - name: Ginger Chai
+    price : 30
+    size : regular
+     
+default_chai_base :  &default_base
+  tea: black_tea
+  water : 200ml
+  brewing_time: 5
+
+morning_chai:
+  <<: *default_base
+  milk: 100ml
+
+evening_chai:
+  <<: *default_base
+  milk: 200ml
+
+# Data type conversion
+
+zip_code : !!str 12345
+count: !!int "123"
+
+
+unique_spices: !!set
+  ? cardamon
+  ? ginger
+  ? cloves
+
