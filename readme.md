@@ -1,5 +1,3 @@
-# ☕ Yaml complete course
-
 # ☕ YAML: A Developer's Guide (Chai Edition)
 
 *"Like brewing the perfect cup of chai, writing YAML is all about balance, structure, and getting the proportions just right."*
