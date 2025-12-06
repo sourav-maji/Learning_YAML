@@ -1,0 +1,51 @@
+chai_type: masla_chai # Inline comment
+temprature : hot
+servings: 2
+brewing_time: 5
+
+
+chai_recipe:
+  base: black tea
+  milk: whole milk
+chai_recipe_two:
+  base: black tea
+  milk: whole milk
+
+chai_name : Masla Chai
+description: "Chai with cardamon, ginger"
+tagline : 'The best chai in town'
+brewing_instruction: |
+  boil water
+  add tea leaves
+  add milk
+brewing_instruction_two: >
+  boil water
+  add tea leaves
+  add milk
+
+cups_per_day: 3
+cups_per_day_two: 3.5
+cups_per_day_three: 3.5e+2
+cups_per_day_four: 0xFF22FF
+
+
+# Boolean data type
+
+is_hot : true
+add_sugar: yes 
+add_salt: no
+instant : on
+premium: off
+
+
+# null value in YAML
+
+sweetner: null
+alternative_milk : ˜ # ~ means null in YAML
+
+# Timestamp
+
+morning_brew : 2025-1-15
+local_time : 2025-1-15 08:30:01
+
+# Collections in YAML
